@@ -4,8 +4,8 @@ from PIL import Image, ImageDraw
 counter = 7
 counter2 = 22
 counter3 = 7
-width = 700
-height = 400
+width = int(raw_input("Enter the desired width\n"))
+height = int(raw_input("Enter the desired height\n"))
 
 files = [
   '/Users/Erik/localCoding/windowgen/assets/upperrightcorner.png',
