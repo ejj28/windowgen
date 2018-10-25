@@ -1,6 +1,6 @@
 import os
 
-from PIL import Image
+from PIL import Image, ImageDraw
 counter = 7
 counter2 = 22
 counter3 = 7
@@ -49,5 +49,6 @@ for i in range(1,35):
 result.paste(img3, (counter, 0), img3)
 result.paste(img4, (counter, counter2), img4)
 result.paste(img2, (0, counter2), img2)
-
+dr = ImageDraw.Draw(result)
+dr.rectangle([7,22,counter,counter2],fill="#dedede")
 result.save('/Users/Erik/localCoding/windowgen/image.jpg', dither=Image.NONE)
