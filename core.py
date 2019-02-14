@@ -30,10 +30,10 @@ be = Image.open(files[6])
 le = Image.open(files[7])
 re = Image.open(files[8])
 
-w1, h1 = img1.size
-w2, h2 = img2.size
-w3, h3 = img3.size
-w4, h4 = img4.size
+w1, h1 = ulc.size
+w2, h2 = blc.size
+w3, h3 = urc.size
+w4, h4 = brc.size
 dr = ImageDraw.Draw(result)
 dr.rectangle([0,0,width,height],fill="blue")
 #result.paste(bg, (0, 0))
