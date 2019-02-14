@@ -40,7 +40,7 @@ dr.rectangle([0,0,width,height],fill="blue")
 result.paste(ulc, (0, 0), ulc)
 
 for i in range(1,((width - 6) - 7) - 1):
-    result.paste(tb, (counter, 0))
+    result.paste(te, (counter, 0))
     
     counter += 1
 for i in range (1,((height - 22) - 7)):
