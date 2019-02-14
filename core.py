@@ -56,4 +56,4 @@ result.paste(brc, (counter, counter2), brc)
 result.paste(blc, (0, counter2), blc)
 
 dr.rectangle([7,22,counter,counter2],fill="#dedede")
-result.save('image.png')
+result.save('output/image.png')
