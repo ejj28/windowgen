@@ -49,7 +49,7 @@ for i in range (1,((height - 22) - 7)):
     counter2 += 1
 for i in range(1,((width - 6) - 7) - 1):
     
-    result.paste(te, (counter3, counter2))
+    result.paste(be, (counter3, counter2))
     counter3 += 1
 result.paste(urc, (counter, 0), urc)
 result.paste(brc, (counter, counter2), brc)
