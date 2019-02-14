@@ -8,15 +8,15 @@ width = int(raw_input("Enter the desired width\n"))
 height = int(raw_input("Enter the desired height\n"))
 
 files = [
-  '/Users/Erik/localCoding/windowgen/assets/upperrightcorner.png',
-  '/Users/Erik/localCoding/windowgen/assets/bottomrightcorner.png',
-  '/Users/Erik/localCoding/windowgen/assets/upperleftcorner.png',
-  '/Users/Erik/localCoding/windowgen/assets/bottomleftcorner.png',
-  '/Users/Erik/localCoding/windowgen/assets/testbackground.png',
-  '/Users/Erik/localCoding/windowgen/assets/topbar.png',
-  '/Users/Erik/localCoding/windowgen/assets/bottomedge.png',
-  '/Users/Erik/localCoding/windowgen/assets/leftedge.png',
-  '/Users/Erik/localCoding/windowgen/assets/rightedge.png'
+  'assets/upperrightcorner.png',
+  'assets/bottomrightcorner.png',
+  'assets/upperleftcorner.png',
+  'assets/bottomleftcorner.png',
+  'assets/testbackground.png',
+  'assets/topbar.png',
+  'assets/bottomedge.png',
+  'assets/leftedge.png',
+  'assets/rightedge.png'
   ]
   
 result = Image.new("RGB", (width, height))
@@ -56,4 +56,4 @@ result.paste(img4, (counter, counter2), img4)
 result.paste(img2, (0, counter2), img2)
 
 dr.rectangle([7,22,counter,counter2],fill="#dedede")
-result.save('/Users/Erik/localCoding/windowgen/image.png')
+result.save('image.png')
