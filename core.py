@@ -16,7 +16,8 @@ files = [
   'assets/topbar.png',
   'assets/bottomedge.png',
   'assets/leftedge.png',
-  'assets/rightedge.png'
+  'assets/rightedge.png',
+  'assets/exitbutton.png'
   ]
   
 result = Image.new("RGB", (width, height))
@@ -29,6 +30,7 @@ te = Image.open(files[5])
 be = Image.open(files[6])
 le = Image.open(files[7])
 re = Image.open(files[8])
+eb = Image.open(files[9])
 
 w1, h1 = ulc.size
 w2, h2 = blc.size
@@ -54,6 +56,6 @@ for i in range(1,((width - 6) - 7) - 1):
 result.paste(urc, (counter, 0), urc)
 result.paste(brc, (counter, counter2), brc)
 result.paste(blc, (0, counter2), blc)
-
+result.paste(eb, (4, 5))
 dr.rectangle([7,22,counter,counter2],fill="#dedede")
 result.save('output/image.png')
